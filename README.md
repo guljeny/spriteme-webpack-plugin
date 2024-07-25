@@ -28,7 +28,7 @@ Then add plugin in webpack config.
 ```
 const SpritemeWebpackPlugin = require('spriteme-webpack-plugin');
 
-new SpritemePlugin({
+new SpritemeWebpackPlugin({
     from: path.resolve(__dirname, './public/spritesheets/'),
     to: 'assets/textures/',
 }),
