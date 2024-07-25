@@ -11,7 +11,7 @@ const defaultOptions = {
   gap: 10,
 };
 
-class SpritesheetWebpackPlugin {
+class SpritemeWebpackPlugin {
   constructor (options) {
     this.options = { ...defaultOptions, ...options };
   }
@@ -21,7 +21,7 @@ class SpritesheetWebpackPlugin {
     const { RawSource } = webpack.sources;
 
     compiler.hooks.make.tapAsync(
-      'SpritesheetWebpackPlugin',
+      'SpritemeWebpackPlugin',
       async (compilation, callback) => {
         const innerDirs = fs.readdirSync(this.options.from);
         const { from, to, format, gap, name, allowedFiles } = this.options;
@@ -60,4 +60,4 @@ class SpritesheetWebpackPlugin {
   }
 }
 
-module.exports = SpritesheetWebpackPlugin;
+module.exports = SpritemeWebpackPlugin;

@@ -1,5 +1,5 @@
 {
-  "name": "spritesheet-webpack-plugin",
+  "name": "spriteme-webpack-plugin",
   "version": "1.0.0",
   "description": "Webpack plugin to generate spritesheets",
   "main": "src/index.js",
