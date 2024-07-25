@@ -1,6 +1,6 @@
 {
   "name": "spriteme-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Webpack plugin to generate spritesheets",
   "main": "src/index.js",
   "scripts": {

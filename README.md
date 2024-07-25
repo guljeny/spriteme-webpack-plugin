@@ -9,7 +9,7 @@ This plugin automatically generate spritesheets with name of folder and images l
 - Install [ImageMagic](https://imagemagick.org/script/download.php).
 
   For example on MacOS run: `brew install imagemagick`.
-- Install package: `npm i -D spritesheet-webpack-plugin`.
+- Install package: `npm i -D spriteme-webpack-plugin`.
 
 ## Usage
 
@@ -26,9 +26,9 @@ spritesheets/
 
 Then add plugin in webpack config.
 ```
-const SpritesheetWebpackPlugin = require('spritesheet-webpack-plugin');
+const SpritemeWebpackPlugin = require('spriteme-webpack-plugin');
 
-new SpritesheetPlugin({
+new SpritemePlugin({
     from: path.resolve(__dirname, './public/spritesheets/'),
     to: 'assets/textures/',
 }),
