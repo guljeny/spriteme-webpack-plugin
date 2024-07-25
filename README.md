@@ -1,10 +1,13 @@
 # Spritesheet Webpack Plugin
+
 _Webpack plugin to generate spritesheets_
+
 This plugin automatically generate spritesheets with name of folder and images located inside
 
 ## Installation
 
 - Install [ImageMagic](https://imagemagick.org/script/download.php).
+
   For example on MacOS run: `brew install imagemagick`.
 - Install package: `npm i -D spritesheet-webpack-plugin`.
 
@@ -42,8 +45,8 @@ new SpritesheetPlugin({
 - `name: string` - Generated image and json name.
 
   Part with `#name` will be replaced with directory name.
+
   Default: `'#name.spritesheet'`.
 - `format: string` - Output image format. Default: `png`.
 -  `gap`: Distance beetween sprites. Default: `10`.
-
 - `format` - default 'png' - format of compiled image.

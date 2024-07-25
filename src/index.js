@@ -37,7 +37,10 @@ class SpritesheetWebpackPlugin {
               return allowedFiles.includes(ext);
             }).map(img => path.join(group, img));
 
-            const { image, meta, frames } = await spriteMe(images, { format, gap });
+            const {
+              image, meta, frames,
+            } = await spriteMe(images, { format, gap });
+
             const baseName = name.replace('#name', dir);
             const imgName = `${baseName}.${format}`;
             const jsonName = `${baseName}.json`;

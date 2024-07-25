@@ -1,14 +1,19 @@
 {
   "name": "spritesheet-webpack-plugin",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Webpack plugin to generate spritesheets",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint -c .eslintrc.json ./src"
   },
-  "author": "",
+  "author": "Yauheni Hul",
+  "repository": "github:guljeny/spritesheet-webpack-plugin",
   "license": "ISC",
   "dependencies": {
     "sprite-me": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0"
   }
 }
