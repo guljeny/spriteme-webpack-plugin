@@ -8,6 +8,7 @@ const defaultOptions = {
   allowedFiles: ['.png', '.svg', '.jpg', '.jpeg'],
   name: '#name.spritesheet',
   format: 'png',
+  gap: 10,
 };
 
 class SpritesheetWebpackPlugin {
@@ -23,7 +24,7 @@ class SpritesheetWebpackPlugin {
       'SpritesheetWebpackPlugin',
       async (compilation, callback) => {
         const innerDirs = fs.readdirSync(this.options.from);
-        const { from, to, format, name, allowedFiles } = this.options;
+        const { from, to, format, gap, name, allowedFiles } = this.options;
         compilation.contextDependencies.add(this.options.from);
 
         await Promise.all(innerDirs.map(async dir => {
@@ -36,7 +37,7 @@ class SpritesheetWebpackPlugin {
               return allowedFiles.includes(ext);
             }).map(img => path.join(group, img));
 
-            const { image, meta, frames } = await spriteMe(images, { format });
+            const { image, meta, frames } = await spriteMe(images, { format, gap });
             const baseName = name.replace('#name', dir);
             const imgName = `${baseName}.${format}`;
             const jsonName = `${baseName}.json`;
