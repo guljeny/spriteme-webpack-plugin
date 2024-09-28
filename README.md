@@ -1,4 +1,4 @@
-# Spritesheet Webpack Plugin
+# Sprite-me Webpack Plugin
 
 _Webpack plugin to generate spritesheets_
 
@@ -10,8 +10,8 @@ This plugin automatically generate spritesheets with name of folder and images l
 
     **Version `7` is required**. Check it by running `magick --version`
 
-  > I recomend to use [ImageMagick Easy Instal](https://github.com/SoftCreatR/imei/)
-  > Some package managers like `brew` can install imagemagick with version 6
+  > I recomend to use [ImageMagick Easy Instal](https://github.com/SoftCreatR/imei/)  
+    Some package managers like `brew` can install imagemagick with version 6
   
 - Install package: `npm i -D spriteme-webpack-plugin`.
 
