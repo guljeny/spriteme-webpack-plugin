@@ -1,6 +1,6 @@
 {
   "name": "spriteme-webpack-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Webpack plugin to generate spritesheets",
   "main": "src/index.js",
   "scripts": {
@@ -9,6 +9,17 @@
   "author": "Yauheni Hul",
   "repository": "github:guljeny/spriteme-webpack-plugin",
   "license": "ISC",
+  "keywords": [
+    "sprite",
+    "spritesheet",
+    "imagemagick",
+    "image generation",
+    "atlass",
+    "image",
+    "webpack",
+    "webpack plugin",
+    "sprite-me"
+  ],
   "dependencies": {
     "sprite-me": "1.1.4"
   },

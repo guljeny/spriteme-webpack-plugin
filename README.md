@@ -6,9 +6,13 @@ This plugin automatically generate spritesheets with name of folder and images l
 
 ## Installation
 
-- Install [ImageMagic](https://imagemagick.org/script/download.php).
+- Install [ImageMagic V7](https://imagemagick.org/script/download.php).
 
-  For example on MacOS run: `brew install imagemagick`.
+    **Version `7` is required**. Check it by running `magick --version`
+
+  > I recomend to use [ImageMagick Easy Instal](https://github.com/SoftCreatR/imei/)
+  > Some package managers like `brew` can install imagemagick with version 6
+  
 - Install package: `npm i -D spriteme-webpack-plugin`.
 
 ## Usage
